@@ -7,19 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="logo sajta">
-        <h1>Nike Shop</h1>
-        <nav>
+    <h1>{{naslov}}</h1>
             <ul>
-                <li>Zenska</li>
-                <li>Muska</li>
-                <li>Decja</li>
+              {% for stavka in spisak%}
+                <li><a href="/restoran/1">{{stavka}}</a>a</li>
+                 {% endfor %}
             </ul>
-        </nav>
-    </header>
-    <main>Ovo je main</main>
-    <footer>Ovo je futer Sofija Miljkovic 4.6B</footer>
 
 </body>
 </html>
