@@ -18,6 +18,12 @@ def index():
                            naslov = "Spisak resrorana",
                            spisak = rastorani)
 
+@app.route("/restoran/1")
+def restoran():
+    nazivSpiska = "Spisak jela"
+    spisakjela = ["Pljeskavica","Pica","Rizoto","Savarma"]
+    return  render_template("restoran.html", naziv=nazivSpiska, spisak=spisakjela)
+
 @app.route("/primer-string")
 def  string():
     return "Luka Smiljkovic najjaci"
